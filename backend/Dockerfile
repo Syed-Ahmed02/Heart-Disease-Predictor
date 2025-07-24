@@ -6,11 +6,9 @@ COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY ./data/heart_disease.csv /code/heart_disease.csv
+COPY ./data /code/data
 
-COPY ./models/logistic_regression_model.pkl /code/logistic_regression_model.pkl
-
-COPY ./models/scaler.pkl /code/scaler.pkl
+COPY ./models /code/models
 
 COPY ./src /code/src
 
