@@ -12,7 +12,7 @@ COPY ./models/logistic_regression_model.pkl /code/logistic_regression_model.pkl
 
 COPY ./models/scaler.pkl /code/scaler.pkl
 
-COPY ./src /code/app
+COPY ./src /code/src
 
 COPY ./.env /code/.env
 
